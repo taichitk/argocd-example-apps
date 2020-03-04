@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-nginx-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: simple-nginx-ui
+  template:
+    metadata:
+      labels:
+        app: simple-nginx-ui
+    spec:
+      containers:
+      - image: registry.cn-hangzhou.aliyuncs.com/xianlu/old-nginx
+        name: simple-nginx-ui
+        ports:
+        - containerPort: 80
