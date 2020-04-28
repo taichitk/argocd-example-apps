@@ -14,7 +14,7 @@ spec:
         app: simple-nginx-ui
     spec:
       containers:
-      - image: registry.cn-hangzhou.aliyuncs.com/xianlu/new-nginx
+      - image: registry.cn-hangzhou.aliyuncs.com/xianlu/new-nginx-123
         name: simple-nginx-ui
         ports:
         - containerPort: 80
