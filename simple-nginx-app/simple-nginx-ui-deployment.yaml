@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: simple-nginx-ui
 spec:
-  replicas: 1
+  replicas: 20
   revisionHistoryLimit: 3
   selector:
     matchLabels:
